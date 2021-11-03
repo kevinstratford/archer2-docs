@@ -9,8 +9,8 @@
       
       
       
-      <link rel="shortcut icon" href="../favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <link rel="icon" href="../favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -31,7 +31,7 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
@@ -40,6 +40,19 @@
     
     
       
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165933823-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
     
     
   </head>
@@ -51,8 +64,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
-      
   
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,23 +86,23 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="ARCHER2 User Documentation" class="md-header-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ARCHER2 User Documentation" class="md-header__button md-logo" aria-label="ARCHER2 User Documentation" data-md-component="logo">
       
   <img src="../images/archer2_white_transparent.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             ARCHER2 User Documentation
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               ARCHER2 Known Issues
@@ -98,22 +112,28 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -129,9 +149,9 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -143,11 +163,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -155,17 +178,15 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+    <a href=".." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation" data-md-component="logo">
       
   <img src="../images/archer2_white_transparent.png" alt="logo">
 
@@ -175,7 +196,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -214,21 +235,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="nav-2">
-        Quickstart
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Quickstart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Quickstart" data-md-level="1">
-        <label class="md-nav__title" for="nav-2">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Quickstart
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -239,8 +264,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -251,8 +278,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -263,85 +292,7 @@
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
-      
-      <label class="md-nav__link" for="nav-3">
-        ARCHER > ARCHER2 Migration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="ARCHER > ARCHER2 Migration" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
-          <span class="md-nav__icon md-icon"></span>
-          ARCHER > ARCHER2 Migration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archer-migration/" class="md-nav__link">
-        Overview
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archer-migration/account-migration/" class="md-nav__link">
-        Migrating your account from ARCHER to ARCHER2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archer-migration/data-migration/" class="md-nav__link">
-        Migrating data from ARCHER to ARCHER2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archer-migration/archer2-differences/" class="md-nav__link">
-        Main differences between ARCHER and ARCHER2
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -362,6 +313,7 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -375,7 +327,10 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -385,7 +340,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#open-issues" class="md-nav__link">
@@ -396,22 +351,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#issue-with-castep-calculations-using-num_proc_in_smp-setting" class="md-nav__link">
-    Issue with CASTEP calculations using num_proc_in_smp setting
+  <a href="#error-message-no-space-left-on-device-added-2021-07-20" class="md-nav__link">
+    Error message: No space left on device (Added: 2021-07-20)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#job-failures-with-mpi_init-errors" class="md-nav__link">
-    Job failures with MPI_Init errors
+  <a href="#petsc-fails-when-used-on-more-than-one-node-added-2021-06-21" class="md-nav__link">
+    PETSc fails when used on more than one node (Added: 2021-06-21)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#singularity-and-cmake" class="md-nav__link">
-    Singularity and CMake
+  <a href="#hpe-cray-perftools-modules-not-available-by-default-added-2021-04-27" class="md-nav__link">
+    HPE Cray perftools modules not available by default (Added: 2021-04-27)
   </a>
   
 </li>
@@ -438,8 +393,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#memory-leak-leads-to-job-fail-by-out-of-memory-oom-error" class="md-nav__link">
-    Memory leak leads to job fail by out of memory (OOM) error
+  <a href="#memory-leak-leads-to-job-fail-by-out-of-memory-oom-error-updated-2021-04-26" class="md-nav__link">
+    Memory leak leads to job fail by out of memory (OOM) error (Updated: 2021-04-26)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mpi-ucx-error-ivb_reg_mr" class="md-nav__link">
+    MPI UCX ERROR: ivb_reg_mr
   </a>
   
 </li>
@@ -458,8 +420,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#problem-accessing-package-accounts-from-compute-nodes" class="md-nav__link">
-    Problem accessing Package Accounts from compute nodes
+  <a href="#singularity-and-cmake-3x" class="md-nav__link">
+    Singularity and CMake 3.x
   </a>
   
 </li>
@@ -503,21 +465,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="nav-6">
-        User and Best Practice Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          User and Best Practice Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="User and Best Practice Guide" data-md-level="1">
-        <label class="md-nav__title" for="nav-6">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           User and Best Practice Guide
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -528,8 +494,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -540,8 +522,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -552,8 +536,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -564,8 +550,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -576,8 +564,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -588,8 +578,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -600,8 +592,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -612,8 +606,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -624,8 +620,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -636,8 +634,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -648,8 +648,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -660,8 +662,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -672,6 +676,21 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -690,21 +709,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="nav-7">
-        Research Software
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Research Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Research Software" data-md-level="1">
-        <label class="md-nav__title" for="nav-7">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Research Software
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -715,8 +738,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -727,8 +752,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -739,8 +766,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -751,8 +780,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -763,8 +794,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -775,8 +808,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -787,8 +822,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -799,8 +836,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -811,8 +850,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -823,8 +864,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -835,8 +878,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -847,8 +892,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -859,8 +906,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -871,8 +920,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -883,8 +934,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -895,8 +948,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -907,8 +962,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -919,8 +976,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -931,6 +990,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -949,21 +1009,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="nav-8">
-        Software Libraries
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Software Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Software Libraries" data-md-level="1">
-        <label class="md-nav__title" for="nav-8">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Software Libraries
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -974,8 +1038,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -986,8 +1052,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -998,8 +1066,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1010,8 +1080,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1022,8 +1094,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1034,8 +1108,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1046,8 +1122,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1058,8 +1136,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1070,8 +1150,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1082,8 +1164,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software-libraries/mkl/" class="md-nav__link">
+        Intel MKL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1094,8 +1192,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1106,8 +1206,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1118,8 +1220,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1130,8 +1234,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software-libraries/slepc/" class="md-nav__link">
+        SLEPc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1142,8 +1262,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1154,6 +1276,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1168,10 +1291,85 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Data Analysis and Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Analysis and Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Data Analysis and Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../data-tools/" class="md-nav__link">
-        Data Analysis and Tools
+        Overview
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-tools/paraview/" class="md-nav__link">
+        ParaView
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-tools/cray-r/" class="md-nav__link">
+        R
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-tools/visidata/" class="md-nav__link">
+        VisiData
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1191,6 +1389,68 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Other Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Other Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Other Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other-software/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other-software/crystal/" class="md-nav__link">
+        CRYSTAL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1199,11 +1459,14 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1213,7 +1476,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#open-issues" class="md-nav__link">
@@ -1224,22 +1487,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#issue-with-castep-calculations-using-num_proc_in_smp-setting" class="md-nav__link">
-    Issue with CASTEP calculations using num_proc_in_smp setting
+  <a href="#error-message-no-space-left-on-device-added-2021-07-20" class="md-nav__link">
+    Error message: No space left on device (Added: 2021-07-20)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#job-failures-with-mpi_init-errors" class="md-nav__link">
-    Job failures with MPI_Init errors
+  <a href="#petsc-fails-when-used-on-more-than-one-node-added-2021-06-21" class="md-nav__link">
+    PETSc fails when used on more than one node (Added: 2021-06-21)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#singularity-and-cmake" class="md-nav__link">
-    Singularity and CMake
+  <a href="#hpe-cray-perftools-modules-not-available-by-default-added-2021-04-27" class="md-nav__link">
+    HPE Cray perftools modules not available by default (Added: 2021-04-27)
   </a>
   
 </li>
@@ -1266,8 +1529,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#memory-leak-leads-to-job-fail-by-out-of-memory-oom-error" class="md-nav__link">
-    Memory leak leads to job fail by out of memory (OOM) error
+  <a href="#memory-leak-leads-to-job-fail-by-out-of-memory-oom-error-updated-2021-04-26" class="md-nav__link">
+    Memory leak leads to job fail by out of memory (OOM) error (Updated: 2021-04-26)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mpi-ucx-error-ivb_reg_mr" class="md-nav__link">
+    MPI UCX ERROR: ivb_reg_mr
   </a>
   
 </li>
@@ -1286,8 +1556,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#problem-accessing-package-accounts-from-compute-nodes" class="md-nav__link">
-    Problem accessing Package Accounts from compute nodes
+  <a href="#singularity-and-cmake-3x" class="md-nav__link">
+    Singularity and CMake 3.x
   </a>
   
 </li>
@@ -1305,7 +1575,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -1319,37 +1589,61 @@
 impacts and any known workarounds. Many of these issues are under
 active investigation by HPE Cray and the wider service.</p>
 <h2 id="open-issues">Open Issues</h2>
-<h3 id="issue-with-castep-calculations-using-num_proc_in_smp-setting">Issue with CASTEP calculations using <code>num_proc_in_smp</code> setting</h3>
-<p>When using the <code>num_proc_in_smp</code> input option to CASTEP users will sometimes encounter an 
-error such as:</p>
-<div class="highlight"><pre><span></span><code>    Error comms_setup_smp: Failed to initialise IPC
+<h3 id="error-message-no-space-left-on-device-added-2021-07-20">Error message: <code>No space left on device</code> (Added: 2021-07-20)</h3>
+<p>Following an issue with te Lustre file system, there may be a number of files on the
+system that have stale active file handles on the Lustre server. Attempts to overwrite
+or append to these files may lead to error messages such as:</p>
+<div class="highlight"><pre><span></span><code>No space left on device
 </code></pre></div>
-<p>This is beacuse shared memory segments from previous (failed) CASTEP calculations remain on
-the node using up resources. We are investigating with HPE Cray how this issue can be 
-addressed. The current workaround is to resubmit without the <code>num_proc_in_smp</code> option
-set though we are aware that this leads to reduced CASTEP performance.</p>
-<h3 id="job-failures-with-mpi_init-errors">Job failures with <code>MPI_Init</code> errors</h3>
-<p>If you see failures with an error message similar to:</p>
-<div class="highlight"><pre><span></span><code>MPICH ERROR [Rank 7] [job id 65233.0] [Mon Jan 11 16:15:34 2021] [unknown] [nid001066] - Abort(1115279) (rank 7 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
-MPIR_Init_thread(632)......: 
-MPID_Init(516).............: 
-MPIDI_NM_mpi_init_hook(575): **ofid_getinfo ofi_init.h 575 MPIDI_NM_mpi_init_hook No data available
-...
+<p>even though there are no issues with storage quotas. There are two potential workarounds
+for this issue:</p>
+<ol>
+<li>Remove the offending file(s) (e.g. using the <code>rm</code> command)</li>
+<li>Work in a different directory or write to a different file name so you are not trying
+   to overwrite or append to the offending file(s)</li>
+</ol>
+<h3 id="petsc-fails-when-used-on-more-than-one-node-added-2021-06-21">PETSc fails when used on more than one node (Added: 2021-06-21)</h3>
+<p>There is a bug in the default HPE Cray MPICH which leades to failures from PETSc
+when running on more than one node.</p>
+<p><strong>Workaround:</strong> switch to a newer version of HPE Cray MPICH. To do this, modify
+your job submission script to add the following lines after all your other
+<code>module</code> commands but before you use <code>srun</code> to run the executable:</p>
+<div class="highlight"><pre><span></span><code>module swap cray-mpich cray-mpich/8.1.3
+export LD_LIBRARY_PATH=${CRAY_LD_LIBRARY_PATH}:${LD_LIBRARY_PATH}
 </code></pre></div>
-<p>this indicates an problem with the node. Please <a href="mailto:support@archer2.ac.uk">contact the ARCHER2 Service Desk</a>
-with the job ID for your failed job.</p>
-<h3 id="singularity-and-cmake">Singularity and CMake</h3>
-<p>The issue concerns the building of a cmake-compiled code in bind mode in
-Singularity containers. This fails because CMake 3.x, running within the
-container on a UAN, cannot find the MPI libraries (cray-mpich) on the host
-despite the correct paths having been provided.</p>
+<h3 id="hpe-cray-perftools-modules-not-available-by-default-added-2021-04-27">HPE Cray <code>perftools</code> modules not available by default (Added: 2021-04-27)</h3>
+<p>The HPE Cray <code>perftools</code> modules are no longer available by default on login to
+ARCHER2 or on the compute nodes when you run a job. This is being investigated
+and we hope to fix the issue soon.</p>
+<p><strong>Workarounds</strong> You can access the <code>perftools</code> modules by restoring a different
+compiler environment or by switching to a different Programming Environment 
+release.</p>
+<p><em>Option 1: Restoring a different compiler environment</em></p>
+<p>On an ARCHER2 login node you can make the <code>perftools</code> modules available with
+a command such as:</p>
+<div class="highlight"><pre><span></span><code>module restore -s PrgEnv-gnu
+</code></pre></div>
+<p>If you need to use the <code>perftools</code> modules with the default Cray compilers then
+you must first switch to a different compiler suite and then back to the Cray
+compiler suite:</p>
+<div class="highlight"><pre><span></span><code>module restore -s PrgEnv-gnu
+module restore -s PrgEnv-cray
+</code></pre></div>
+<p><em>Option 2: Switch to a different Programming Environment (PE) release</em></p>
+<p>You can also restore the <code>perftools</code> modules by switching to a different PE
+release. For example, if you want to use the Cray compiler suite with the
+21.03 PE release, you would use:</p>
+<div class="highlight"><pre><span></span><code>module load cpe/21.03
+</code></pre></div>
+<p>This would make the <code>perftools</code> modules available. More information on
+using different PE releases <a href="../user-guide/dev-environment/#switching-to-a-different-hpe-cray-programming-environment-release">is available in the User and Best Practice Guide</a></p>
 <h3 id="research-software">Research Software</h3>
-<p>There are several outstanding issues for the centrally installed Research Software:
-- <strong>ChemShell and PyChemShell</strong> are not yet available. We are working with the code developers to address this.
-- <strong>Climate Data Operators (CDO) and NCAR Command Language (NCL)</strong> are not yet available, due to issues with dependencies. An investigation is on-going.
-- <strong>Paraview</strong> is not yet available. We hope to provide a suitable installation in the near future.
-- <strong>VMD</strong> is not yet available. We hope to provide a suitable installation in the near future.
-- <strong>PLUMED</strong> is not yet available. Currently, we recommend affected users to install a local version of the software.</p>
+<p>There are several outstanding issues for the centrally installed Research Software:</p>
+<ul>
+<li><strong>PyChemShell</strong> is not yet available. We are working with the code developers to address this.</li>
+<li><strong>VMD</strong> is not yet available. We hope to provide a suitable installation in the near future.</li>
+<li><strong>PLUMED</strong> is not yet available. Currently, we recommend affected users to install a local version of the software.</li>
+</ul>
 <p>Users should also check individual software pages, for known limitations/ caveats, for the use of software on the Cray EX platform and Cray Linux Environment.</p>
 <h3 id="stat-view-not-working"><code>stat-view</code> not working</h3>
 <p>The <code>stat-view</code> utility from the <code>cray-stat</code> module does not currently
@@ -1376,39 +1670,63 @@ raise Exception(&#39;STATview requires xdot\nxdot can be downloaded from https:/
 Exception: STATview requires xdot
 xdot can be downloaded from https://github.com/jrfonseca/xdot.py
 </code></pre></div>
+<p>The current workaround is to use <code>/work/y02/shared/stat-view-workaround/stat-view</code> instead.</p>
 <h3 id="issues-with-rpath-for-non-default-library-versions">Issues with RPATH for non-default library versions</h3>
 <p>When you compile applications against non-default versions of libraries within the HPE
 Cray software stack and use the environment variable <code>CRAY_ADD_RPATH=yes</code> to try and encode
 the paths to these libraries within the binary this will not be respected at runtime and
 the binaries will use the default versions instead.</p>
-<h3 id="memory-leak-leads-to-job-fail-by-out-of-memory-oom-error">Memory leak leads to job fail by out of memory (OOM) error</h3>
+<p>The workaround for this issue is to ensure that you set:</p>
+<div class="highlight"><pre><span></span><code>export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH
+</code></pre></div>
+<p>at both compile and runtime. For more details on using non-default versions of libraries,
+see <a href="../user-guide/dev-environment/#using-non-default-versions-of-hpe-cray-libraries-on-archer2">the description in the User and Best Practice Guide</a></p>
+<h3 id="memory-leak-leads-to-job-fail-by-out-of-memory-oom-error-updated-2021-04-26">Memory leak leads to job fail by out of memory (OOM) error (Updated: 2021-04-26)</h3>
 <p>Your program compiles and seems to run fine, but after some time (at least 10 
 minutes), it crashes with an out-of-memory (OOM) error. The job crashes more 
 quickly when run on a smaller number of nodes.</p>
-<p><strong>Known workaround</strong>
-This may be caused by a known problem with the default version of MPICH, 
-which is in the process of being resolved. In the meantime, you can get your 
-jobs to run by switching to UCF MPICH instead. In your Slurm submission 
-script, you will need to remove the following line:</p>
-<div class="highlight"><pre><span></span><code>module load epcc-job-env
+<p>The workaround for this issue is to use the newer HPE Cray Programming Environment
+release 21.03. Instructions on using a non-default programming environment release
+<a href="../user-guide/dev-environment/#switching-to-a-different-hpe-cray-programming-environment-release">are available in the User and Best Practice Guide</a></p>
+<h3 id="mpi-ucx-error-ivb_reg_mr">MPI <code>UCX ERROR: ivb_reg_mr</code></h3>
+<p>If you are using the UCX layer for MPI communication you may see an error such as:</p>
+<div class="highlight"><pre><span></span><code>[1613401128.440695] [nid001192:11838:0] ib_md.c:325 UCX ERROR ibv_reg_mr(address=0xabcf12c0, length=26400, access=0xf) failed: Cannot allocate memory
+[1613401128.440768] [nid001192:11838:0] ucp_mm.c:137 UCX ERROR failed to register address 0xabcf12c0 mem_type bit 0x1 length 26400 on md[4]=mlx5_0: Input/output error (md reg_mem_types 0x15)
+[1613401128.440773] [nid001192:11838:0] ucp_request.c:269 UCX ERROR failed to register user buffer datatype 0x8 address 0xabcf12c0 len 26400: Input/output error
+MPICH ERROR [Rank 1534] [job id 114930.0] [Mon Feb 15 14:58:48 2021] [unknown] [nid001192] - Abort(672797967) (rank 1534 in comm 0): Fatal error in PMPI_Isend: Other MPI error, error stack:
+PMPI_Isend(160)......: MPI_Isend(buf=0xabcf12c0, count=3300, MPI_DOUBLE_PRECISION, dest=1612, tag=4, comm=0x84000004, request=0x7fffb38fa0fc) failed
+MPID_Isend(416)......:
+MPID_isend_unsafe(92):
+MPIDI_UCX_send(95)...: returned failed request in UCX netmod(ucx_send.h 95 MPIDI_UCX_send Input/output error)
+aborting job:
+Fatal error in PMPI_Isend: Other MPI error, error stack:
+PMPI_Isend(160)......: MPI_Isend(buf=0xabcf12c0, count=3300, MPI_DOUBLE_PRECISION, dest=1612, tag=4, comm=0x84000004, request=0x7fffb38fa0fc) failed
+MPID_Isend(416)......:
+MPID_isend_unsafe(92):
+MPIDI_UCX_send(95)...: returned failed request in UCX netmod(ucx_send.h 95 MPIDI_UCX_send Input/output error)
+[1613401128.457254] [nid001192:11838:0] mm_xpmem.c:82 UCX WARN remote segment id 200002e09 apid 200002e3e is not released, refcount 1
+[1613401128.457261] [nid001192:11838:0] mm_xpmem.c:82 UCX WARN remote segment id 200002e08 apid 100002e3e is not released, refcount 1
 </code></pre></div>
-<p>Instead, you will need to load the programming environment used to 
-compile your program, and switch from the default (OFI) version of MPICH to 
-the UCX version of MPICH. So, if your program was compiled using the GNU 
-programming environment, you should include the following lines in your Slurm 
-submission script before loading any other module:</p>
-<div class="highlight"><pre><span></span><code>module restore /etc/cray-pe.d/PrgEnv-gnu
-module switch cray-mpich/8.0.16 cray-mpich-ucx/8.0.16
-module switch craype-network-ofi craype-network-ucx
+<p>You can add the following line to your job submission script before the <code>srun</code> command
+to try and workaround this error:</p>
+<div class="highlight"><pre><span></span><code>export UCX_IB_REG_METHODS=direct
 </code></pre></div>
-<p>If your program was compiled in a different programming environment, make sure 
-to change the first line to load the correct environment.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Setting this flag may have an impact on code performance.</p>
+</div>
 <h2 id="recently-resolved-issues">Recently Resolved Issues</h2>
-<h3 id="problem-accessing-package-accounts-from-compute-nodes">Problem accessing Package Accounts from compute nodes</h3>
-<p>We were aware of problems, since 16th January, for people who have requested access to Package Accounts or who are trying to access sub-project accounts. </p>
-<p>The authorisation changes were not being picked up by the compute nodes. Affected users would see <code>Permission Denied</code> or equivalent errors, when attempting to access package accounts on the compute nodes or access files within a sub-project account. </p>
-<p>We were able to resolve the issue with our colleagues in HPE Cray.</p>
-<p>(Raised on 20th Jan, closed on 22nd Jan)</p>
+<h3 id="singularity-and-cmake-3x">Singularity and CMake 3.x</h3>
+<p>Certain cmake variables need to be set before a containerised cmake can find
+MPI libraries located on the host.</p>
+<div class="highlight"><pre><span></span><code>MPI_ROOT=/opt/cray/pe/mpich/8.0.16/ofi/gnu/9.1
+
+cmake ...
+    -DMPI_C_HEADER_DIR=&quot;${MPI_ROOT}/include&quot; -DMPI_CXX_HEADER_DIR=&quot;${MPI_ROOT}/include&quot; \
+    -DMPI_C_LIB_NAMES=mpi -DMPI_CXX_LIB_NAMES=mpi \
+    -DMPI_mpi_LIBRARY=&quot;${MPI_ROOT}/lib/libmpi.so&quot; \
+    ...
+</code></pre></div>
                 
               
               
@@ -1419,54 +1737,58 @@ to change the first line to load the correct environment.</p>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../archer-migration/archer2-differences/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../quick-start/quickstart-developers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quickstart for developers" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Quickstart for developers
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Main differences between ARCHER and ARCHER2
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../faq/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                ARCHER2 Frequently Asked Questions
-              </div>
+        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="Next: ARCHER2 Frequently Asked Questions" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              ARCHER2 Frequently Asked Questions
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
       </div>
       
   <div class="md-footer-social">
@@ -1505,19 +1827,13 @@ to change the first line to load the correct environment.</p>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
-      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "..",
-          features: ['tabs'],
-          search: Object.assign({
-            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>

@@ -9,8 +9,8 @@
       
       
       
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -31,7 +31,7 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
@@ -40,6 +40,19 @@
     
     
       
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165933823-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
     
     
   </head>
@@ -51,8 +64,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
-      
   
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,23 +86,23 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="ARCHER2 User Documentation" class="md-header-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ARCHER2 User Documentation" class="md-header__button md-logo" aria-label="ARCHER2 User Documentation" data-md-component="logo">
       
   <img src="../../images/archer2_white_transparent.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             ARCHER2 User Documentation
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Using Python
@@ -98,22 +112,28 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -129,9 +149,9 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -143,11 +163,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -155,17 +178,15 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+    <a href="../.." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation" data-md-component="logo">
       
   <img src="../../images/archer2_white_transparent.png" alt="logo">
 
@@ -175,7 +196,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -214,21 +235,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="nav-2">
-        Quickstart
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Quickstart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Quickstart" data-md-level="1">
-        <label class="md-nav__title" for="nav-2">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Quickstart
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -239,8 +264,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -251,8 +278,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -263,85 +292,7 @@
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
-      
-      <label class="md-nav__link" for="nav-3">
-        ARCHER > ARCHER2 Migration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="ARCHER > ARCHER2 Migration" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
-          <span class="md-nav__icon md-icon"></span>
-          ARCHER > ARCHER2 Migration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/" class="md-nav__link">
-        Overview
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/account-migration/" class="md-nav__link">
-        Migrating your account from ARCHER to ARCHER2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/data-migration/" class="md-nav__link">
-        Migrating data from ARCHER to ARCHER2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/archer2-differences/" class="md-nav__link">
-        Main differences between ARCHER and ARCHER2
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -392,21 +343,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
-      <label class="md-nav__link" for="nav-6">
-        User and Best Practice Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          User and Best Practice Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="User and Best Practice Guide" data-md-level="1">
-        <label class="md-nav__title" for="nav-6">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           User and Best Practice Guide
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -417,8 +372,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -429,8 +400,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -441,8 +414,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,8 +428,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -465,8 +442,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -477,8 +456,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -489,8 +470,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -501,8 +484,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -511,6 +496,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -525,7 +511,10 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -535,7 +524,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#hpe-cray-python-distribution" class="md-nav__link">
@@ -578,6 +567,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-jupyterlab-on-archer2" class="md-nav__link">
+    Using JupyterLab on ARCHER2
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -585,8 +581,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -597,8 +595,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -609,8 +609,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -621,8 +623,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -633,6 +637,21 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -651,21 +670,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="nav-7">
-        Research Software
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Research Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Research Software" data-md-level="1">
-        <label class="md-nav__title" for="nav-7">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Research Software
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -676,8 +699,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -688,8 +713,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -700,8 +727,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -712,8 +741,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -724,8 +755,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -736,8 +769,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -748,8 +783,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -760,8 +797,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -772,8 +811,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -784,8 +825,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -796,8 +839,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -808,8 +853,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -820,8 +867,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -832,8 +881,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -844,8 +895,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -856,8 +909,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -868,8 +923,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -880,8 +937,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -892,6 +951,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -910,21 +970,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="nav-8">
-        Software Libraries
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Software Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Software Libraries" data-md-level="1">
-        <label class="md-nav__title" for="nav-8">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Software Libraries
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -935,8 +999,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -947,8 +1013,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -959,8 +1027,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -971,8 +1041,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -983,8 +1055,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -995,8 +1069,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1007,8 +1083,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1019,8 +1097,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1031,8 +1111,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1043,8 +1125,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/mkl/" class="md-nav__link">
+        Intel MKL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1055,8 +1153,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1067,8 +1167,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1079,8 +1181,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1091,8 +1195,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/slepc/" class="md-nav__link">
+        SLEPc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1103,8 +1223,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1115,6 +1237,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1129,10 +1252,85 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Data Analysis and Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Analysis and Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Data Analysis and Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../data-tools/" class="md-nav__link">
-        Data Analysis and Tools
+        Overview
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/paraview/" class="md-nav__link">
+        ParaView
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/cray-r/" class="md-nav__link">
+        R
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/visidata/" class="md-nav__link">
+        VisiData
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1152,6 +1350,68 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Other Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Other Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Other Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other-software/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other-software/crystal/" class="md-nav__link">
+        CRYSTAL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1160,11 +1420,14 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1174,7 +1437,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#hpe-cray-python-distribution" class="md-nav__link">
@@ -1217,6 +1480,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-jupyterlab-on-archer2" class="md-nav__link">
+    Using JupyterLab on ARCHER2
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1225,7 +1495,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -1257,8 +1527,8 @@ Python distribution.</p>
 common packages used for scientific computation and data analysis. These
 include:</p>
 <ul>
-<li>numpy and scipy - built against HPE Cray LibSci</li>
-<li>mpi4py - built against HPE Cray MPICH</li>
+<li>numpy and scipy - built using GCC against HPE Cray LibSci</li>
+<li>mpi4py - built using GCC against HPE Cray MPICH</li>
 <li>dask</li>
 </ul>
 <p>The HPE Cray Python distribution can be loaded (either on the front-end
@@ -1270,6 +1540,13 @@ or in a submission script) using:</p>
 <p>The HPE Cray Python distribution provides Python 3. There is no Python 2
 version as Python 2 is now deprecated.</p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The HPE Cray Python distribution is built using GCC compilers. If you wish
+to compile your own Python, C/C++ or Fortran code to use with HPE Cray
+Python, you should ensure that you compile using <code>PrgEnv-gnu</code> to make sure
+they are compatible.</p>
+</div>
 <h2 id="adding-your-own-packages">Adding your own packages</h2>
 <p>If the packages you require are not included in the HPE Cray Python
 distribution, further packages can be added using <code>pip</code>. However, as the
@@ -1280,20 +1557,27 @@ location on the /work file systems (by default, <code>pip</code> installs into
 variable to point to a location on /work, for example:</p>
 <pre><code>export PYTHONUSERBASE=/work/t01/t01/auser/.local
 </code></pre>
-<p>You will also need to ensure that the location of commands installed by
-<code>pip</code> are available on the command line by modifying the <code>PATH</code>
-environment variable. Once you have set <code>PYTHONUSERBASE</code> as described
-above, you can do this with the command:</p>
+<p>You will also need to ensure that:</p>
+<ol>
+<li>the location of commands installed by <code>pip</code> are available on the command
+   line by modifying the <code>PATH</code> environment variable; and</li>
+<li>any packages you install are available to Python by modifying the 
+   <code>PYTHONPATH</code> environment variable.</li>
+</ol>
+<p>You can do this in the following way (once you have set <code>PYTHONUSERBASE</code> as described
+above):</p>
 <pre><code>export PATH=$PYTHONUSERBASE/bin:$PATH
+export PYTHONPATH=$PYTHONUSERBASE/lib/python3.8/site-packages:$PYTHONPATH
 </code></pre>
-<p>We would recommend adding both of these commands to your <code>$HOME/.bashrc</code>
+<p>We would recommend adding all three of these commands to your <code>$HOME/.bashrc</code>
 file to ensure they are set by default when you log in to ARCHER2.</p>
-<p>Once, you have done this, you can use <code>pip</code> to add packages. This can be
-done using:</p>
-<pre><code>pip install --user &lt;package_name&gt;
+<p>Once, you have done this, you can use <code>pip</code> to add packages on top of the HPE 
+Cray Python environment. This can be done using:</p>
+<pre><code>module load cray-python
+pip install --user &lt;package_name&gt;
 </code></pre>
 <p>This uses the <code>--user</code> flag to ensure the packages are installed in
-your user directory.</p>
+the directory specified by <code>PYTHONUSERBASE</code>.</p>
 <p>We recommend that you use the <code>pipenv</code> and/or <code>virtualenv</code> packages to
 manage your Python environments. For information on how to do this see:</p>
 <ul>
@@ -1306,7 +1590,7 @@ variety of scenarios of using Python on the ARCHER2 compute nodes.</p>
 <h3 id="example-serial-python-submission-script">Example serial Python submission script</h3>
 <pre><code>#!/bin/bash --login
 
-#SBATCH --name=python_test
+#SBATCH --job-name=python_test
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
@@ -1326,13 +1610,19 @@ module load cray-python
 # Run your Python progamme
 python python_test.py
 </code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have installed your own packages as decribed above then you will
+need to set <code>PATH</code> and <code>PYTHONPATH</code> as described above within your job
+submission script to accesss the commands and packages you have installed.</p>
+</div>
 <h3 id="example-mpi4py-job-submission-script">Example mpi4py job submission script</h3>
 <p>Programmes that have been parallelised with mpi4py can be run on
 multiple processors on ARCHER2. A sample submission script is given
 below. The primary difference from the Python submission script in the
 previous section is that we must run the programme using
-<code>srun python my_prog.py</code> instead of <code>python my_prog,py</code>. Failing to do so will cause
-a segmentation fault in your programme when it reaches the line
+<code>srun python my_prog.py</code> instead of <code>python my_prog,py</code>. Failing to do so will 
+cause a segmentation fault in your programme when it reaches the line
 <code>from mpi4py import MPI</code>.</p>
 <pre><code>#!/bin/bash --login
 # Slurm job options (job-name, compute nodes, job time)
@@ -1358,6 +1648,71 @@ module load cray-python
 # will occur
 srun python mpi4py_test.py
 </code></pre>
+<h2 id="using-jupyterlab-on-archer2">Using JupyterLab on ARCHER2</h2>
+<p>It is possible to view and run Jupyter notebooks that are on both login nodes 
+and compute nodes of ARCHER2.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can test these on the login nodes, but please do not attempt to run any 
+computationally intensive jobs on them. Jobs may get killed once they hit a
+CPU limit on login nodes.</p>
+</div>
+<p>Please follow these steps:</p>
+<ol>
+<li>
+<p>Install JupyterLab in your work directory:
+   <div class="highlight"><pre><span></span><code>module load cray-python
+export PYTHONUSERBASE=/work/t01/t01/auser/.local
+export PATH=$PYTHONUSERBASE/bin:$PATH
+pip install --user jupyterlab
+</code></pre></div></p>
+</li>
+<li>
+<p>To run your Jupyter notebook on a compute node, you can run an interactive 
+   session:
+   <div class="highlight"><pre><span></span><code>srun --nodes=1 --exclusive --time=00:20:00 --account=&lt;your_budget&gt; 
+--partition=standard --qos=short --reservation=shortqos --pty /bin/bash
+</code></pre></div>
+   Your prompt will change to something like this:
+   <div class="highlight"><pre><span></span><code>auser@nid001015:/tmp&gt;
+</code></pre></div>
+   In this case, the node id is <code>nid001015</code>. Execute the following on the
+   compute node:
+   <div class="highlight"><pre><span></span><code>cd /work/t01/t01/auser # Update the path to your work directory
+export PYTHONUSERBASE=$(pwd)/.local
+export PATH=$PYTHONUSERBASE/bin:$PATH
+export HOME=$(pwd)
+module load cray-python
+</code></pre></div>
+   You can skip this step if you want to test JupyterLab on the login node.</p>
+</li>
+<li>
+<p>Run JupyterLab:
+   <div class="highlight"><pre><span></span><code>export JUPYTER_RUNTIME_DIR=$(pwd)
+jupyter lab --ip=0.0.0.0 --no-browser
+</code></pre></div>
+   Once it's started, you will see a URL printed in the terminal window of 
+   the form <code>http://127.0.0.1:8888?token=&lt;string&gt;</code>; we'll need this URL in
+   step 5.</p>
+</li>
+<li>
+<p>Open a new terminal window on your laptop, and run the following command:
+   <div class="highlight"><pre><span></span><code>ssh &lt;username&gt;@login.archer2.ac.uk -L8888:&lt;node_id&gt;:8888
+</code></pre></div>
+   where <code>&lt;username&gt;</code> is your username, and <code>&lt;node_id&gt;</code> is the node id we're 
+   currently on (on a login node, this will be <code>uan01</code>, or similar; on a compute 
+   node, it will be a mix of numbers and letters). In our example, <code>&lt;node_id&gt;</code>
+   is <code>nid001015</code>. Note, please use the same port number as the URL of step 3. 
+   Sometimes, the port may be another number like 8889.</p>
+</li>
+<li>
+<p>Now, if you open a browser window locally, you should now be able to 
+   navigate to the URL from step 3, and this should display the Jupyter Lab 
+   server. If you haven't selected the correct node id, you will get a
+   connection error. If you are on a compute node, the notebook will be
+   available for the length of the interactive session you have requested.</p>
+</li>
+</ol>
                 
               
               
@@ -1368,54 +1723,58 @@ srun python mpi4py_test.py
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../containers/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../containers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Containers" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Containers
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Containers
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../analysis/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Data analysis
-              </div>
+        <a href="../analysis/" class="md-footer__link md-footer__link--next" aria-label="Next: Data analysis" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Data analysis
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
       </div>
       
   <div class="md-footer-social">
@@ -1454,19 +1813,13 @@ srun python mpi4py_test.py
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
-      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "../..",
-          features: ['tabs'],
-          search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>

@@ -9,8 +9,8 @@
       
       
       
-      <link rel="shortcut icon" href="../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -31,7 +31,7 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
@@ -40,6 +40,19 @@
     
     
       
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165933823-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
     
     
   </head>
@@ -51,8 +64,9 @@
     
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
-      
   
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,23 +86,23 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="ARCHER2 User Documentation" class="md-header-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ARCHER2 User Documentation" class="md-header__button md-logo" aria-label="ARCHER2 User Documentation" data-md-component="logo">
       
   <img src="../../images/archer2_white_transparent.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             ARCHER2 User Documentation
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Running jobs on ARCHER2
@@ -98,22 +112,28 @@
       </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -129,9 +149,9 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -143,11 +163,14 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -155,17 +178,15 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+    <a href="../.." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation" data-md-component="logo">
       
   <img src="../../images/archer2_white_transparent.png" alt="logo">
 
@@ -175,7 +196,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -214,21 +235,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="nav-2">
-        Quickstart
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Quickstart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Quickstart" data-md-level="1">
-        <label class="md-nav__title" for="nav-2">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Quickstart
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -239,8 +264,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -251,8 +278,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -263,85 +292,7 @@
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
-      
-      <label class="md-nav__link" for="nav-3">
-        ARCHER > ARCHER2 Migration
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="ARCHER > ARCHER2 Migration" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
-          <span class="md-nav__icon md-icon"></span>
-          ARCHER > ARCHER2 Migration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/" class="md-nav__link">
-        Overview
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/account-migration/" class="md-nav__link">
-        Migrating your account from ARCHER to ARCHER2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/data-migration/" class="md-nav__link">
-        Migrating data from ARCHER to ARCHER2
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archer-migration/archer2-differences/" class="md-nav__link">
-        Main differences between ARCHER and ARCHER2
-      </a>
-    </li>
-  
-
           
         </ul>
       </nav>
@@ -392,21 +343,25 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
-      <label class="md-nav__link" for="nav-6">
-        User and Best Practice Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          User and Best Practice Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="User and Best Practice Guide" data-md-level="1">
-        <label class="md-nav__title" for="nav-6">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           User and Best Practice Guide
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -417,8 +372,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -429,8 +400,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -441,8 +414,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -453,8 +428,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -463,6 +440,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -477,7 +455,10 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -487,7 +468,41 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cus" class="md-nav__link">
+    CUs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-available-budget" class="md-nav__link">
+    Checking available budget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charging" class="md-nav__link">
+    Charging
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#basic-slurm-commands" class="md-nav__link">
@@ -555,6 +570,13 @@
           <li class="md-nav__item">
   <a href="#quality-of-service-qos" class="md-nav__link">
     Quality of Service (QoS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-mail-notifications" class="md-nav__link">
+    E-mail notifications
   </a>
   
 </li>
@@ -715,12 +737,80 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interactive-jobs-salloc" class="md-nav__link">
-    Interactive Jobs: salloc
+  <a href="#using-multiple-srun-commands-in-a-single-job-script" class="md-nav__link">
+    Using multiple srun commands in a single job script
   </a>
   
-    <nav class="md-nav" aria-label="Interactive Jobs: salloc">
+    <nav class="md-nav" aria-label="Using multiple srun commands in a single job script">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-multiple-full-node-subjobs-within-a-larger-job" class="md-nav__link">
+    Running multiple, full-node subjobs within a larger job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-multiple-subjobs-that-each-use-a-fraction-of-a-node" class="md-nav__link">
+    Running multiple subjobs that each use a fraction of a node
+  </a>
+  
+    <nav class="md-nav" aria-label="Running multiple subjobs that each use a fraction of a node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#genmaskcpu-helper-script" class="md-nav__link">
+    genmaskcpu helper script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-128-serial-tasks-running-on-a-single-node" class="md-nav__link">
+    Example 1: 128 serial tasks running on a single node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-8-subjobs-on-1-node-each-with-8-mpi-processes-and-2-openmp-threads-per-process" class="md-nav__link">
+    Example 2: 8 subjobs on 1 node each with 8 MPI processes and 2 OpenMP threads per process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-256-serial-tasks-running-across-two-nodes" class="md-nav__link">
+    Example 3: 256 serial tasks running across two nodes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-jobs" class="md-nav__link">
+    Interactive Jobs
+  </a>
+  
+    <nav class="md-nav" aria-label="Interactive Jobs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-salloc-to-reserve-resources" class="md-nav__link">
+    Using salloc to reserve resources
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#using-srun-directly" class="md-nav__link">
@@ -765,6 +855,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-priority-access" class="md-nav__link">
+    Low priority access
+  </a>
   
 </li>
       
@@ -877,8 +974,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -889,8 +988,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -901,8 +1002,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -913,8 +1016,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -925,8 +1030,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -937,8 +1044,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -949,8 +1058,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -961,8 +1072,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -973,6 +1086,21 @@
     </li>
   
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
           
         </ul>
       </nav>
@@ -991,21 +1119,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="nav-7">
-        Research Software
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Research Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Research Software" data-md-level="1">
-        <label class="md-nav__title" for="nav-7">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Research Software
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -1016,8 +1148,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1028,8 +1162,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1040,8 +1176,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1052,8 +1190,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1064,8 +1204,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1076,8 +1218,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1088,8 +1232,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1100,8 +1246,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1112,8 +1260,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1124,8 +1274,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1136,8 +1288,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1148,8 +1302,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1160,8 +1316,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1172,8 +1330,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1184,8 +1344,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1196,8 +1358,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1208,8 +1372,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1220,8 +1386,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1232,6 +1400,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1250,21 +1419,25 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="nav-8">
-        Software Libraries
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Software Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Software Libraries" data-md-level="1">
-        <label class="md-nav__title" for="nav-8">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Software Libraries
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
             
+              
   
   
   
@@ -1275,8 +1448,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1287,8 +1462,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1299,8 +1476,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1311,8 +1490,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1323,8 +1504,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1335,8 +1518,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1347,8 +1532,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1359,8 +1546,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1371,8 +1560,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1383,8 +1574,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/mkl/" class="md-nav__link">
+        Intel MKL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1395,8 +1602,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1407,8 +1616,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1419,8 +1630,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1431,8 +1644,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/slepc/" class="md-nav__link">
+        SLEPc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1443,8 +1672,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1455,6 +1686,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1469,10 +1701,85 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Data Analysis and Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Analysis and Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Data Analysis and Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../data-tools/" class="md-nav__link">
-        Data Analysis and Tools
+        Overview
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/paraview/" class="md-nav__link">
+        ParaView
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/cray-r/" class="md-nav__link">
+        R
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/visidata/" class="md-nav__link">
+        VisiData
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1492,6 +1799,68 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Other Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Other Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Other Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other-software/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other-software/crystal/" class="md-nav__link">
+        CRYSTAL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1500,11 +1869,14 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -1514,7 +1886,41 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cus" class="md-nav__link">
+    CUs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-available-budget" class="md-nav__link">
+    Checking available budget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charging" class="md-nav__link">
+    Charging
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#basic-slurm-commands" class="md-nav__link">
@@ -1582,6 +1988,13 @@
           <li class="md-nav__item">
   <a href="#quality-of-service-qos" class="md-nav__link">
     Quality of Service (QoS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-mail-notifications" class="md-nav__link">
+    E-mail notifications
   </a>
   
 </li>
@@ -1742,12 +2155,80 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interactive-jobs-salloc" class="md-nav__link">
-    Interactive Jobs: salloc
+  <a href="#using-multiple-srun-commands-in-a-single-job-script" class="md-nav__link">
+    Using multiple srun commands in a single job script
   </a>
   
-    <nav class="md-nav" aria-label="Interactive Jobs: salloc">
+    <nav class="md-nav" aria-label="Using multiple srun commands in a single job script">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-multiple-full-node-subjobs-within-a-larger-job" class="md-nav__link">
+    Running multiple, full-node subjobs within a larger job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-multiple-subjobs-that-each-use-a-fraction-of-a-node" class="md-nav__link">
+    Running multiple subjobs that each use a fraction of a node
+  </a>
+  
+    <nav class="md-nav" aria-label="Running multiple subjobs that each use a fraction of a node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#genmaskcpu-helper-script" class="md-nav__link">
+    genmaskcpu helper script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-128-serial-tasks-running-on-a-single-node" class="md-nav__link">
+    Example 1: 128 serial tasks running on a single node
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-8-subjobs-on-1-node-each-with-8-mpi-processes-and-2-openmp-threads-per-process" class="md-nav__link">
+    Example 2: 8 subjobs on 1 node each with 8 MPI processes and 2 OpenMP threads per process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-256-serial-tasks-running-across-two-nodes" class="md-nav__link">
+    Example 3: 256 serial tasks running across two nodes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-jobs" class="md-nav__link">
+    Interactive Jobs
+  </a>
+  
+    <nav class="md-nav" aria-label="Interactive Jobs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-salloc-to-reserve-resources" class="md-nav__link">
+    Using salloc to reserve resources
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#using-srun-directly" class="md-nav__link">
@@ -1792,6 +2273,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#low-priority-access" class="md-nav__link">
+    Low priority access
+  </a>
   
 </li>
       
@@ -1905,7 +2393,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -1933,6 +2421,30 @@ to contact the <a href="mailto:support@archer2.ac.uk">ARCHER2 Service Desk</a>.<
 login nodes (to submit, check and cancel jobs), and by specifying Slurm
 directives that describe the resources required for your jobs in job
 submission scripts.</p>
+<h2 id="resources">Resources</h2>
+<h3 id="cus">CUs</h3>
+<p>Time used on ARCHER2 is measured in CUs.<br />
+1 CU = 1 Node Hour for a standard 128 core node.</p>
+<p>The <a href="https://www.archer2.ac.uk/support-access/cu-calc.html">CU calculator</a> will help you to calculate the CU cost for your jobs.</p>
+<h3 id="checking-available-budget">Checking available budget</h3>
+<p>You can check in <a href="https://safe.epcc.ed.ac.uk">SAFE</a> by selecting <code>Login accounts</code> from the menu, select the login account you want to query.</p>
+<p>Under <code>Login account details</code> you will see each of the budget codes you have access to listed e.g.
+<code>e123 resources</code> and then under Resource Pool to the right of this, a note of the remaining budget in CUs. </p>
+<p>When logged in to the machine you can also use the command </p>
+<pre><code>sacctmgr show assoc where user=$LOGNAME format=account,user,maxtresmins
+</code></pre>
+<p>This will list all the budget codes that you have access to e.g.</p>
+<pre><code>   Account       User   MaxTRESMins
+---------- ---------- -------------
+      e123      userx         cpu=0
+ e123-test      userx
+</code></pre>
+<p>This shows that <code>userx</code> is a member of budgets <code>e123</code> and <code>e123-test</code>.  However, the <code>cpu=0</code> indicates that the <code>e123</code> budget is empty or disabled.   This user can submit jobs using the <code>e123-test</code> budget.</p>
+<p>To see the number of CUs remaining you must check in <a href="https://safe.epcc.ed.ac.uk">SAFE</a>.</p>
+<h3 id="charging">Charging</h3>
+<p>Jobs run on ARCHER2 are charged for the time they use i.e. from the time the job begins to run until the time the job ends (not the full wall time requested).</p>
+<p>Jobs are charged for the full number of nodes which are requested, even if they are not all used.</p>
+<p>Charging takes place at the time the job ends, and the job is charged in full to the budget which is live at the end time.</p>
 <h2 id="basic-slurm-commands">Basic Slurm commands</h2>
 <p>There are three key commands used to interact with the Slurm on the
 command line:</p>
@@ -2046,8 +2558,7 @@ on ARCHER2.</p>
 <h3 id="quality-of-service-qos">Quality of Service (QoS)</h3>
 <p>On ARCHER2, job limits are defined by the requested Quality of Service
 (QoS), as specified by the <code>--qos</code> Slurm directive. The following table
-lists the active QoS on
-ARCHER2.</p>
+lists the active QoS on ARCHER2.</p>
 <table>
 <thead>
 <tr>
@@ -2057,24 +2568,27 @@ ARCHER2.</p>
 <th>Jobs Queued</th>
 <th>Jobs Running</th>
 <th>Partition(s)</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>standard</td>
-<td>940</td>
+<td>256</td>
 <td>24 hrs</td>
 <td>64</td>
 <td>16</td>
 <td>standard</td>
+<td>Maximum of 256 nodes in use by any one user at any time</td>
 </tr>
 <tr>
 <td>short</td>
 <td>8</td>
 <td>20 mins</td>
-<td>2</td>
-<td>1</td>
+<td>16</td>
+<td>4</td>
 <td>standard</td>
+<td></td>
 </tr>
 <tr>
 <td>long</td>
@@ -2083,6 +2597,25 @@ ARCHER2.</p>
 <td>16</td>
 <td>16</td>
 <td>standard</td>
+<td>Minimum walltime of 24 hrs</td>
+</tr>
+<tr>
+<td>largescale</td>
+<td>940</td>
+<td>3 hrs</td>
+<td>4</td>
+<td>1</td>
+<td>standard</td>
+<td>Minimum job size of 257 nodes</td>
+</tr>
+<tr>
+<td>lowpriority</td>
+<td>256</td>
+<td>3 hrs</td>
+<td>4</td>
+<td>1</td>
+<td>standard</td>
+<td>Maximum of 256 nodes in use by any one user at any time. Jobs not charged but requires at least 1 CU in budget to use.</td>
 </tr>
 </tbody>
 </table>
@@ -2091,11 +2624,6 @@ ARCHER2.</p>
 <p>If you want to use the <code>short</code> QoS then you also need to add the
 <code>--reservation=shortqos</code> to your job submission command.</p>
 </div>
-<p>Please note, there are two other limits not covered by the above table.</p>
-<ul>
-<li>The short QoS is only available Mon-Fri.</li>
-<li>Long jobs must have a minimum walltime of 24 hrs.</li>
-</ul>
 <p>You can find out the QoS that you can use by running the following
 command:</p>
 <pre><code>sacctmgr show assoc user=$USER cluster=archer2-es format=cluster,account,user,qos%50
@@ -2107,6 +2635,9 @@ command:</p>
 Desk</a> and we
 can discuss how to accommodate your requirements.</p>
 </div>
+<h3 id="e-mail-notifications">E-mail notifications</h3>
+<p>E-mail notifications from the batch system are not currently available
+on ARCHER2.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="slurm-error-messages">Slurm error messages</h3>
 <p>An incorrect submission will cause Slurm to return an error.
@@ -2324,6 +2855,12 @@ of the reasons that cause a job to be in a state.</p>
 <p>Slurm places standard output (STDOUT) and standard error (STDERR) for
 each job in the file <code>slurm_&lt;JobID&gt;.out</code>. This file appears in the job's
 working directory once your job starts running.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Output may be buffered - to enable live output, e.g. for monitoring
+job status, add <code>--unbuffered</code> to the <code>srun</code> command in your SLURM
+script.</p>
+</div>
 <h2 id="specifying-resources-in-job-scripts">Specifying resources in job scripts</h2>
 <p>You specify the resources you require for your job using directives at
 the top of your job submission script using lines that start with the
@@ -2384,7 +2921,9 @@ environment at the point of submission, the option</p>
      to the batch system.</li>
 </ul>
 <p>Using the <code>--export=none</code> means that the behaviour of batch submissions
-should be repeatable. We strongly recommend its use.</p>
+should be repeatable. We strongly recommend its use, although see
+<a href="./#using-modules-in-the-batch-system-the-epcc-job-env-module">the following section</a>
+to enable access to the usual modules.</p>
 <h2 id="using-modules-in-the-batch-system-the-epcc-job-env-module">Using modules in the batch system: the <code>epcc-job-env</code> module</h2>
 <p>Batch jobs must be submitted in the work file system <code>/work</code> as the
 compute nodes do not have access to the <code>/home</code> file system. This has a
@@ -2536,8 +3075,7 @@ CU Usage Estimate (if full job time used)
 checkScript finished: 0 warning(s) and 0 error(s).
 </code></pre>
 <h2 id="example-job-submission-scripts">Example job submission scripts</h2>
-<p>A subset of example job submission scripts are included in full below.
-You can also download these examples at:</p>
+<p>A subset of example job submission scripts are included in full below.</p>
 <h3 id="example-job-submission-script-for-mpi-parallel-job">Example: job submission script for MPI parallel job</h3>
 <p>A simple MPI job submission script to submit a job using 4 compute nodes
 and 128 MPI ranks per node for 20 minutes would look like:</p>
@@ -2604,7 +3142,6 @@ generate the correct thread pinning.</p>
 #SBATCH --job-name=Example_MPI_Job
 #SBATCH --time=0:20:0
 #SBATCH --nodes=4
-#SBATCH --ntasks=32
 #SBATCH --tasks-per-node=8
 #SBATCH --cpus-per-task=16
 
@@ -2693,7 +3230,314 @@ jobid2=$(sbatch --parsable --dependency=afterok:$jobid1 second_job.sh)
 jobid3=$(sbatch --parsable --dependency=afterok:$jobid1 third_job.sh)
 sbatch --dependency=afterok:$jobid2,afterok:$jobid3 last_job.sh
 </code></pre>
-<h2 id="interactive-jobs-salloc">Interactive Jobs: <code>salloc</code></h2>
+<h2 id="using-multiple-srun-commands-in-a-single-job-script">Using multiple <code>srun</code> commands in a single job script</h2>
+<p>You can use multiple <code>srun</code> commands within in a Slurm job submission script
+to allow you to use the resource requested more flexibly. For example, you 
+could run a collection of smaller jobs within the requested resources or
+you could even subdivide nodes if your individual calculations do not scale
+up to use all 128 cores on a node.</p>
+<p>In this guide we will cover two scenarios:</p>
+<ol>
+<li>Subdividing the job into multiple full-node or multi-node subjobs, e.g.
+    requesting 100 nodes and running 100, 1-node subjobs or 50, 2-node 
+    subjobs.</li>
+<li>Subdividing the job into multiple subjobs that each use a fraction of a
+    node, e.g. requesting 2 nodes and running 256, 1-core subjobs or 16,
+    16-core subjobs.</li>
+</ol>
+<h3 id="running-multiple-full-node-subjobs-within-a-larger-job">Running multiple, full-node subjobs within a larger job</h3>
+<p>When subdivding a larger job into smaller subjobs you typically need to 
+overwrite the <code>--nodes</code> option to <code>srun</code> and add the <code>--ntasks</code> option
+to ensure that each subjob runs on the correct number of nodes and that
+subjobs are placed correctly onto separate nodes.</p>
+<p>For example, we will show how to request 100 nodes and then run 100
+separate 1-node jobs, each of which use 128 MPI processes and which
+run on a different compute node. We start by showing 
+the job script that would achieve this and then explain how this works
+and the options used. In our case, we will run 100 copies of the <code>xthi</code> 
+program that prints the process placement on the node it is running on.</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Slurm job options (job-name, compute nodes, job time)</span>
+<span class="kp">#SBATCH --job-name=multi_xthi</span>
+<span class="kp">#SBATCH --time=0:20:0</span>
+<span class="kp">#SBATCH --nodes=100</span>
+<span class="kp">#SBATCH --tasks-per-node=128</span>
+<span class="kp">#SBATCH --cpus-per-task=1</span>
+
+<span class="c1"># Replace [budget code] below with your budget code (e.g. t01)</span>
+<span class="kp">#SBATCH --account=[budget code]             </span>
+<span class="kp">#SBATCH --partition=standard</span>
+<span class="kp">#SBATCH --qos=standard</span>
+
+<span class="c1"># Setup the job environment (this module needs to be loaded before any other modules)</span>
+module load epcc-job-env
+
+<span class="c1"># Load the xthi module</span>
+module load xthi
+
+<span class="c1"># Set the number of threads to 1</span>
+<span class="c1">#   This prevents any threaded system libraries from automatically </span>
+<span class="c1">#   using threading.</span>
+<span class="nb">export</span> <span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Loop over 100 subjobs starting each of them on a separate node</span>
+<span class="k">for</span> i <span class="k">in</span> <span class="k">$(</span>seq <span class="m">1</span> <span class="m">100</span><span class="k">)</span>
+<span class="k">do</span>
+   <span class="c1"># Launch this subjob on 1 node, note nodes and ntasks options and &amp; to place subjob in the background</span>
+   <span class="nb">srun</span> --nodes<span class="o">=</span><span class="m">1</span> --ntasks<span class="o">=</span><span class="m">128</span> --distribution<span class="o">=</span>block:block --hint<span class="o">=</span>nomultithread xthi &gt; placement<span class="si">${</span><span class="nv">i</span><span class="si">}</span>.txt <span class="p">&amp;</span>
+<span class="k">done</span>
+<span class="c1"># Wait for all background subjobs to finish</span>
+<span class="nb">wait</span>
+</code></pre></div>
+<p>Key points from the example job script:</p>
+<ul>
+<li>The <code>#SBATCH</code> options select 100 full nodes in the usual way.</li>
+<li>Each subjob <code>srun</code> command sets the following:<ul>
+<li><code>--nodes=1</code> We need override this setting from the main job so that each subjob only uses 1 node</li>
+<li><code>--ntasks=128</code> For normal jobs, the number of parallel tasks (MPI processes) is calculated from
+  the number of nodes you request and the number of tasks per node. We need to explicitly tell <code>srun</code>
+  how many we require for this subjob.</li>
+<li><code>--distribution=block:block --hint=nomultithread</code> These options ensure correct placement of
+  processes within the compute nodes.</li>
+<li><code>&amp;</code> Each subjob <code>srun</code> command ends with an ampersand to place the process in the background
+  and move on to the next loop iteration (and subjob submission). Without this, the script would
+  wait for this subjob to complete before moving on to submit the next.</li>
+</ul>
+</li>
+<li>Finally, there is the <code>wait</code> command to tell the script to wait for all the background subjobs
+to complete before exiting. If we did not have this in place, the script would exit as soon as the
+last subjob was submitted and kill all running subjobs.</li>
+</ul>
+<h3 id="running-multiple-subjobs-that-each-use-a-fraction-of-a-node">Running multiple subjobs that each use a fraction of a node</h3>
+<p>As the ARCHER2 nodes contain a large number of cores (128 per node) it
+may sometimes be useful to be able to run multiple executables on a single
+node. For example, you may want to run 128 copies of a serial executable or
+Python script; or, you may want to run multiple copies of parallel executables
+that use less than 128 cores each. This use model is possible using 
+multiple <code>srun</code> commands in a job script on ARCHER2</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can never share a compute node with another user. Although you can
+use <code>srun</code> to place multiple copies of an executable or script on a 
+compute node, you still have exclusive use of that node. The minimum
+amount of use you can reserve for your use on ARCHER2 is a single node.</p>
+</div>
+<p>When using <code>srun</code> to place multiple executables or scripts on a compute 
+node you must be aware of a few things:</p>
+<ul>
+<li>The <code>srun</code> command must specify any Slurm options that differ in value
+   from those specified to <code>sbatch</code>. This typically means that you need 
+   to specify the <code>--nodes</code>, <code>--ntasks</code> and <code>--tasks-per-node</code> options to <code>srun</code>.</li>
+<li>You will usually need to specify the task pinning to cores manually to 
+   prevent multiple executables/scripts running on the same core. We provide
+   a small utility (<code>genmaskcpu</code>) to assist with this.</li>
+<li>You will need to place each <code>srun</code> command into the background and 
+   then use the <code>wait</code> command at the end of the submission script to
+   make sure it does not exit before the commands are complete.</li>
+<li>If you want to use more than one node in the job and use multiple <code>srun</code>
+   per node (e.g. 256 single core processes across 2 nodes) then you need
+   to pass the node ID to the <code>srun</code> commands otherwise Slurm will oversubscribe
+   cores on the first node.</li>
+</ul>
+<p>Below, we briefly describe the <code>genmaskcpu</code> helper script and then provide
+three examples or running multiple subjobs in a node, one that runs 128
+serial processes across a single node; one that runs 8 subjobs each of
+which use 8 MPI processes with 2 OpenMP threads per MPI process; and one
+that runs 256 serial processes across two nodes.</p>
+<h4 id="genmaskcpu-helper-script"><code>genmaskcpu</code> helper script</h4>
+<p>When running multiple copies of executables/scripts on a single node Slurm
+can often not pin processes or threads to cores in such a way to ensure
+efficient use of resources (for example, multiple copies may end up bound
+to the same core). For this reason, you often have to specify manual bindings
+when running multiple executables/scripts on a node.</p>
+<p>Writing CPU binding masks for use with Slurm by hand can be quite tedious,
+especially if you want to use fat bitmasks to allow for binding of threads
+to different cores. To assist with generating binding masks we provide a
+utility script: <code>genmaskcpu</code>, that generates the correct bindings for 
+each subjob based on a number of input arguments:</p>
+<ol>
+<li>Argument 1: The number of subjobs running <em>per node</em></li>
+<li>Argument 2: The index of this subjob within the number running on a node (e.g. if
+    there are 4 subjobs running per node, is this the 1st, 2nd, 3rd, or 4th
+    subjob?)</li>
+<li>Argument 3: The number of parallel <em>processes</em> (MPI processes) per subjob (this must be the same
+    for all subjobs)</li>
+<li>Argument 4: The number of <em>threads</em> per MPI process for the subjob (this must be 
+    the same for all subjobs)</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><code>genmaskcpu</code> only works for <em>homogeneous</em> subjobs, where every subjob
+on the node has the same number of parallel processes and threads per
+parallel process. If your subjobs do not have the same number of processes
+and threads then you will need to generate the binding masks manually.</p>
+</div>
+<p>For example, to generate the binding mask for the first subjob in a set of
+8 subjobs on a node each of which uses 16 MPI processes and 1 thread per
+MPI process, you would use:</p>
+<div class="highlight"><pre><span></span><code>mask=$(genmaskcpu 8 1 16 1)
+</code></pre></div>
+<p>The second subjob would use:</p>
+<div class="highlight"><pre><span></span><code>mask=$(genmaskcpu 8 2 16 1)
+</code></pre></div>
+<h4 id="example-1-128-serial-tasks-running-on-a-single-node">Example 1: 128 serial tasks running on a single node</h4>
+<p>For our first example, we will run 128 single-core copies of the <code>xthi</code> program (which
+prints process/thread placement) on a single ARCHER2 compute node with each
+copy of <code>xthi</code> pinned to a different core. We will use <code>genmaskcpu</code> to generate the 
+correct binding mask for each subjob. The job submission script for
+this example would look like:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># Slurm job options (job-name, compute nodes, job time)</span>
+<span class="kp">#SBATCH --job-name=MultiSerialOnCompute</span>
+<span class="kp">#SBATCH --time=0:10:0</span>
+<span class="kp">#SBATCH --nodes=1</span>
+<span class="kp">#SBATCH --tasks-per-node=128</span>
+<span class="kp">#SBATCH --cpus-per-task=1</span>
+
+<span class="c1"># Replace [budget code] below with your budget code (e.g. t01)</span>
+<span class="kp">#SBATCH --account=[budget code]  </span>
+<span class="kp">#SBATCH --partition=standard</span>
+<span class="kp">#SBATCH --qos=standard</span>
+
+<span class="c1"># Setup the job environment (this module needs to be loaded before any other modules)</span>
+module load epcc-job-env
+
+<span class="c1"># Make xthi available</span>
+module load xthi
+
+<span class="c1"># Make the pinning helper script available</span>
+module load cray-python
+module load genmaskcpu
+
+<span class="c1"># Set the number of threads to 1</span>
+<span class="c1">#   This prevents any threaded system libraries from automatically </span>
+<span class="c1">#   using threading.</span>
+<span class="nb">export</span> <span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Loop over 128 subjobs pinning each to a different core</span>
+<span class="k">for</span> i <span class="k">in</span> <span class="k">$(</span>seq <span class="m">1</span> <span class="m">128</span><span class="k">)</span>
+<span class="k">do</span>
+   <span class="c1"># Generate mask: 128 subjobs per node, subjob number in sequence given by i,</span>
+   <span class="c1"># 1 process per subjob, 1 thread per process</span>
+   <span class="nv">maskcpu</span><span class="o">=</span><span class="k">$(</span>genmaskcpu <span class="m">128</span> <span class="si">${</span><span class="nv">i</span><span class="si">}</span> <span class="m">1</span> <span class="m">1</span><span class="k">)</span>
+   <span class="c1"># Launch subjob overriding job settings as required and in the background</span>
+   <span class="nb">srun</span> --cpu-bind<span class="o">=</span>mask_cpu:<span class="si">${</span><span class="nv">maskcpu</span><span class="si">}</span> --nodes<span class="o">=</span><span class="m">1</span> --ntasks<span class="o">=</span><span class="m">1</span> --tasks-per-node<span class="o">=</span><span class="m">1</span> xthi &gt; placement<span class="si">${</span><span class="nv">i</span><span class="si">}</span>.txt <span class="p">&amp;</span>
+<span class="k">done</span>
+
+<span class="c1"># Wait for all subjobs to finish</span>
+<span class="nb">wait</span>
+</code></pre></div>
+<h4 id="example-2-8-subjobs-on-1-node-each-with-8-mpi-processes-and-2-openmp-threads-per-process">Example 2: 8 subjobs on 1 node each with 8 MPI processes and 2 OpenMP threads per process</h4>
+<p>For our second example, we will run 8 subjobs, each running the <code>xthi</code> program (which
+prints process/thread placement) across 1 node. Each subjob will use 8 MPI processes
+and 2 OpenMP threads per process. We will use <code>genmaskcpu</code> to generate the 
+correct binding mask for each subjob. The job submission script for
+this example would look like:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># Slurm job options (job-name, compute nodes, job time)</span>
+<span class="kp">#SBATCH --job-name=MultiParallelOnCompute</span>
+<span class="kp">#SBATCH --time=0:10:0</span>
+<span class="kp">#SBATCH --nodes=1</span>
+<span class="kp">#SBATCH --tasks-per-node=64</span>
+<span class="kp">#SBATCH --cpus-per-task=2</span>
+
+<span class="c1"># Replace [budget code] below with your budget code (e.g. t01)</span>
+<span class="kp">#SBATCH --account=[budget code]  </span>
+<span class="kp">#SBATCH --partition=standard</span>
+<span class="kp">#SBATCH --qos=standard</span>
+
+<span class="c1"># Setup the job environment (this module needs to be loaded before any other modules)</span>
+module load epcc-job-env
+
+<span class="c1"># Make xthi available</span>
+module load xthi
+
+<span class="c1"># Make the pinning helper script available</span>
+module load cray-python
+module load genmaskcpu
+
+<span class="c1"># Set the number of threads to 2 as required by all subjobs</span>
+<span class="nb">export</span> <span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">2</span>
+
+<span class="c1"># Loop over 8 subjobs</span>
+<span class="k">for</span> i <span class="k">in</span> <span class="k">$(</span>seq <span class="m">1</span> <span class="m">8</span><span class="k">)</span>
+<span class="k">do</span>
+    <span class="nb">echo</span> <span class="nv">$j</span> <span class="nv">$i</span>
+    <span class="c1"># Generate mask: 8 subjobs per node, subjob number in sequence given by i,</span>
+    <span class="c1"># 8 MPI processes per subjob, 2 OpenMP threads per process</span>
+    <span class="nv">maskcpu</span><span class="o">=</span><span class="k">$(</span>genmaskcpu <span class="m">8</span> <span class="si">${</span><span class="nv">i</span><span class="si">}</span> <span class="m">8</span> <span class="m">2</span><span class="k">)</span>
+    <span class="c1"># Launch subjob overriding job settings as required and in the background</span>
+    <span class="nb">srun</span> --cpu-bind<span class="o">=</span>mask_cpu:<span class="si">${</span><span class="nv">maskcpu</span><span class="si">}</span> --nodes<span class="o">=</span><span class="m">1</span> --ntasks<span class="o">=</span><span class="m">8</span> --tasks-per-node<span class="o">=</span><span class="m">8</span> --cpus-per-task<span class="o">=</span><span class="m">2</span> xthi &gt; placement<span class="si">${</span><span class="nv">i</span><span class="si">}</span>.txt <span class="p">&amp;</span>
+<span class="k">done</span>
+
+<span class="c1"># Wait for all subjobs to finish</span>
+<span class="nb">wait</span>
+</code></pre></div>
+<h4 id="example-3-256-serial-tasks-running-across-two-nodes">Example 3: 256 serial tasks running across two nodes</h4>
+<p>For our third example, we will run 256 single-core copies of the <code>xthi</code> program (which
+prints process/thread placement) across two ARCHER2 compute nodes with each
+copy of <code>xthi</code> pinned to a different core. We will use <code>genmaskcpu</code> to generate the 
+correct binding mask for each subjob. We will also illustrate a mechnism for getting the
+node IDs to pass to <code>srun</code> as this is required to ensure that the individual subjobs are
+assigned to the correct node. This mechanism uses the <code>scontrol</code> command to turn the 
+nodelist from <code>sbatch</code> into a format we can use as input to <code>srun</code>. The job submission
+script for this example would look like:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># Slurm job options (job-name, compute nodes, job time)</span>
+<span class="kp">#SBATCH --job-name=MultiSerialOnComputes</span>
+<span class="kp">#SBATCH --time=0:10:0</span>
+<span class="kp">#SBATCH --nodes=2</span>
+<span class="kp">#SBATCH --tasks-per-node=128</span>
+<span class="kp">#SBATCH --cpus-per-task=1</span>
+
+<span class="c1"># Replace [budget code] below with your budget code (e.g. t01)</span>
+<span class="kp">#SBATCH --account=[budget code]  </span>
+<span class="kp">#SBATCH --partition=standard</span>
+<span class="kp">#SBATCH --qos=standard</span>
+
+<span class="c1"># Setup the job environment (this module needs to be loaded before any other modules)</span>
+module load epcc-job-env
+
+<span class="c1"># Make xthi available</span>
+module load xthi
+
+<span class="c1"># Make the pinning helper script available</span>
+module load cray-python
+module load genmaskcpu
+
+<span class="c1"># Set the number of threads to 1</span>
+<span class="c1">#   This prevents any threaded system libraries from automatically </span>
+<span class="c1">#   using threading.</span>
+<span class="nb">export</span> <span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Get a list of the nodes assigned to this job in a format we can use.</span>
+<span class="c1">#   scontrol converts the condensed node IDs in the sbatch environment</span>
+<span class="c1">#   variable into a list of full node IDs that we can use with srun to</span>
+<span class="c1">#   ensure the subjobs are placed on the correct node. e.g. this converts</span>
+<span class="c1">#   &quot;nid[001234,002345]&quot; to &quot;nid001234 nid002345&quot;</span>
+<span class="nv">nodelist</span><span class="o">=</span><span class="k">$(</span>scontrol show hostnames <span class="nv">$SLURM_JOB_NODELIST</span><span class="k">)</span>
+
+<span class="c1"># Loop over the nodes assigned to the job</span>
+<span class="k">for</span> nodeid <span class="k">in</span> <span class="nv">$nodelist</span>
+<span class="k">do</span>
+    <span class="c1"># Loop over 128 subjobs on each node pinning each to a different core</span>
+    <span class="k">for</span> i <span class="k">in</span> <span class="k">$(</span>seq <span class="m">1</span> <span class="m">128</span><span class="k">)</span>
+    <span class="k">do</span>
+        <span class="c1"># Generate mask: 128 subjobs per node, subjob number in sequence given by i,</span>
+        <span class="c1"># 1 process per subjob, 1 thread per process</span>
+        <span class="nv">maskcpu</span><span class="o">=</span><span class="k">$(</span>genmaskcpu <span class="m">128</span> <span class="si">${</span><span class="nv">i</span><span class="si">}</span> <span class="m">1</span> <span class="m">1</span><span class="k">)</span>
+        <span class="c1"># Launch subjob overriding job settings as required and in the background, note</span>
+        <span class="c1"># additional --nodelist option to specify the correct node to bind to</span>
+        <span class="nb">srun</span> --cpu-bind<span class="o">=</span>mask_cpu:<span class="si">${</span><span class="nv">maskcpu</span><span class="si">}</span> --nodelist<span class="o">=</span><span class="si">${</span><span class="nv">nodeid</span><span class="si">}</span> --nodes<span class="o">=</span><span class="m">1</span> --ntasks<span class="o">=</span><span class="m">1</span> --tasks-per-node<span class="o">=</span><span class="m">1</span> xthi &gt; placement_<span class="si">${</span><span class="nv">nodeid</span><span class="si">}</span>_<span class="si">${</span><span class="nv">i</span><span class="si">}</span>.txt <span class="p">&amp;</span>
+    <span class="k">done</span>
+<span class="k">done</span>
+
+<span class="c1"># Wait for all subjobs to finish</span>
+<span class="nb">wait</span>
+</code></pre></div>
+<h2 id="interactive-jobs">Interactive Jobs</h2>
+<h3 id="using-salloc-to-reserve-resources">Using <code>salloc</code> to reserve resources</h3>
 <p>When you are developing or debugging code you often want to run many
 short jobs with a small amount of editing the code between runs. This
 can be achieved by using the login nodes to run MPI but you may want to
@@ -2706,11 +3550,11 @@ output from your program directly in the terminal.</p>
 <p>You use the <code>salloc</code> command to reserve compute nodes for interactive
 jobs.</p>
 <p>To submit a request for an interactive job reserving 8 nodes (1024
-physical cores) for 1 hour you would issue the following qsub command
-from the command line:</p>
+physical cores) for 20 minutes on the short queue you would issue the
+following command from the command line:</p>
 <pre><code>auser@uan01:&gt; salloc --nodes=8 --tasks-per-node=128 --cpus-per-task=1 \
-              --time=01:00:00 --partition=standard --qos=standard \
-              --account=[budget code]
+              --time=00:20:00 --partition=standard --qos=short \
+              --reservation=shortqos --account=[budget code]
 </code></pre>
 <p>When you submit this job your terminal will display something like:</p>
 <pre><code>salloc: Granted job allocation 24236
@@ -2735,9 +3579,10 @@ to finish before this you should use the <code>exit</code> command - this will
 return you to your prompt before you issued the <code>salloc</code> command.</p>
 <h3 id="using-srun-directly">Using <code>srun</code> directly</h3>
 <p>A second way to run an interactive job is to use <code>srun</code> directly in the
-following way:</p>
-<pre><code>auser@uan01:/work/t01/t01/auser&gt; srun --nodes=1 --exclusive --time=00:20:00 --account=[] \
-               --partition=standard --qos=standard --pty /bin/bash
+following way (here using the "short queue"):</p>
+<pre><code>auser@uan01:/work/t01/t01/auser&gt; srun --nodes=1 --exclusive --time=00:20:00 \
+               --partition=standard --qos=short --reservation=shortqos \
+               --pty /bin/bash
 auser@uan01:/work/t01/t01/auser&gt; hostname
 nid001261
 </code></pre>
@@ -2751,7 +3596,11 @@ of <code>srun</code> is required to launch a parallel job in the allocation.</p>
 <p>When finished, type <code>exit</code> to relinquish the allocation and control will
 be returned to the front end.</p>
 <p>By default, the interactive shell will retain the environment of the
-parent. If you want a clean shell, remember to specify <code>--export=none</code>.</p>
+parent. If you want a clean shell, remember to specify <code>--export=none</code>.
+If you need to
+<a href="./#using-modules-in-the-batch-system-the-epcc-job-env-module">use modules within your job</a>,
+you will need to start a login shell by passing the <code>--login</code> argument
+to <code>bash</code>.</p>
 <h2 id="heterogeneous-jobs">Heterogeneous jobs</h2>
 <p>The SLURM submissions discussed above involve a single executable image.
 However, there are situtions where two or more distinct executables are
@@ -2983,9 +3832,70 @@ Node    1, rank   13, thread   0, (affinity =   80)
 Node    1, rank   14, thread   0, (affinity =   96)
 Node    1, rank   15, thread   0, (affinity =  112)
 </code></pre></div></p>
+<h2 id="low-priority-access">Low priority access</h2>
+<p>Low priority jobs are not charged against your allocation but will only run when
+other, higher-priority, jobs cannot be run or there are no higher-priority jobs in
+the queue. Although low priority jobs are not charged, you do need a valid, positive
+budget to be able to submit and run low priority jobs, i.e. you need at least 1 CU
+in your budget.</p>
+<p>Low priority access is always available and has the following limits:</p>
+<ul>
+<li>256 node maximum job size</li>
+<li>256 nodes maximum in use by any one user</li>
+<li>512 nodes maximum in use by low priority at any one time</li>
+<li>Maximum 4 low priority jobs in the queue per user</li>
+<li>Maximum 1 low priority job running per user (of the 4 queued)</li>
+<li>Maximum runtime of 3 hours</li>
+</ul>
+<p>You submit a low priority job on ARCHER2 by using the <code>lowpriority</code> QoS. For example,
+you would usually have the following line in your job submission script sbatch 
+options:</p>
+<div class="highlight"><pre><span></span><code>#SBATCH --qos=lowpriority
+</code></pre></div>
 <h2 id="reservations">Reservations</h2>
-<p>The mechanism for submitting reservations on ARCHER2 has yet to be
-specified.</p>
+<p>Reservations are available on ARCHER2. These allow users to reserve a number of nodes
+for a specified length of time starting at a particular time on the system.</p>
+<p>Reservations require justification. They will only be approved if the request could not
+be fulfilled with the standard queues. For instance, you require a job/jobs to run at a
+particular time e.g. for a demonstration or course.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Reservation requests must be submitted at least 60 hours in advance of the reservation
+start time. If requesting a reservation for a Monday at 18:00, please ensure this is
+received by the Friday at 12:00 the latest. The same applies over Service Holidays.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Reservations are only valid for standard compute nodes, high memory compute nodes
+and/or PP nodes cannot be included in reservations.</p>
+</div>
+<p>Reservations will be charged at 1.5 times the usual CU rate and our policy is that they
+will be charged the full rate for the entire reservation at the time of booking, whether
+or not you use the nodes for the full time. In addition, you will not be refunded the
+CUs if you fail to use them due to a job crash unless this crash is due to a system failure.</p>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>At the moment, we are only able to charge for jobs in reservations, not for the full 
+reservation itself. Jobs in reservations are charged at 1.5x the standard rate.</p>
+</div>
+<p>To request a reservation please <a href="mailto:support@archer2.ac.uk">contact the ARCHER2 Service Desk</a>.
+You need to provide the following:</p>
+<ul>
+<li>The start time and date of the reservation.</li>
+<li>The end time and date of the reservation.</li>
+<li>The project code for the reservation.</li>
+<li>The number of nodes required.</li>
+<li>Your justification for the reservation -- this must be provided or the request will be rejected.</li>
+</ul>
+<p>Your request will be checked by the ARCHER2 User Administration team and, if approved, you will be provided a reservation ID which can be used on the system. To submit jobs to a reservation, you need to add <code>--reservation=&lt;reservation ID&gt;</code> to your job submission script or command.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You must have at least 1 CU in the budget to submit a job on ARCHER2, even to a pre-paid reservation.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can submit jobs to a reservation as soon as the reservation has been set up; jobs will remain queued until the reservation starts.</p>
+</div>
 <h2 id="best-practices-for-job-submission">Best practices for job submission</h2>
 <p>This guidance is adapted from <a href="https://docs.nersc.gov/jobs/best-practices/">the advice provided by
 NERSC</a></p>
@@ -3176,54 +4086,58 @@ value to obtain more information on huge pages use.</p>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../sw-environment/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../sw-environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Software environment" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Software environment
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Software environment
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../io/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                I/O and file systems
-              </div>
+        <a href="../io/" class="md-footer__link md-footer__link--next" aria-label="Next: I/O and file systems" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              I/O and file systems
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
       </div>
       
   <div class="md-footer-social">
@@ -3262,19 +4176,13 @@ value to obtain more information on huge pages use.</p>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
-      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "../..",
-          features: ['tabs'],
-          search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
