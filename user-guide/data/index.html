@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -253,14 +253,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
+          
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
@@ -393,14 +395,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
+          
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
@@ -476,14 +480,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
+          
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
@@ -872,6 +878,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-transfer-using-rclone" class="md-nav__link">
+    Data transfer using rclone
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1128,14 +1141,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
+          
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
@@ -1609,14 +1624,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
+          
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
@@ -2090,14 +2107,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
+          
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
@@ -2602,6 +2621,13 @@
           <li class="md-nav__item">
   <a href="#data-transfer-via-gridftp" class="md-nav__link">
     Data transfer via GridFTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-transfer-using-rclone" class="md-nav__link">
+    Data transfer using rclone
   </a>
   
 </li>
@@ -3231,7 +3257,7 @@ command should be executed in the directory containing the source
 file/directory.</p>
 <p>If you want to request a different encryption algorithm add the <code>-c
 [algorithm-name]</code> flag to the <code>scp</code> options. For example, to use the
-(usually faster) <em>arcfour</em> encryption algorithm you would
+(usually faster) <em>aes128-ctr</em> encryption algorithm you would
     use:</p>
 <pre><code>scp [options] -c aes128-ctr source user@login.archer2.ac.uk:[destination]
 </code></pre>
@@ -3259,7 +3285,7 @@ file/directory.</p>
 <p>Additional flags can be specified for the underlying <code>ssh</code> command by
 using a quoted string as the argument of the <code>-e</code> flag.
     e.g.</p>
-<pre><code>rsync [options] -e "ssh -c arcfour" source user@login.archer2.ac.uk:[destination]
+<pre><code>rsync [options] -e "ssh -c aes128-ctr" source user@login.archer2.ac.uk:[destination]
 </code></pre>
 <p>(Remember to replace <code>user</code> with your ARCHER2 username in the example
 above.)</p>
@@ -3280,6 +3306,42 @@ concerning this command's use can be found in the <a href="https://gridcf.org/gc
 <p>Further information on using GridFTP on ARCHER2 to transfer
 data to the <a href="https://www.jasmin.ac.uk">JASMIN facility</a> can be found
 in <a href="https://help.jasmin.ac.uk/article/4997-transfers-from-archer2">the JASMIN user documentation</a>.</p>
+</div>
+<h3 id="data-transfer-using-rclone">Data transfer using <code>rclone</code></h3>
+<p><a href="https://rclone.org/">Rclone</a> is a command-line program to manage files on cloud
+storage. You can transfer files directly to/from cloud storage services, such as
+MS OneDrive and Dropbox. The program preserves timestamps and verifies checksums
+at all times.</p>
+<p>First of all, you must download and unzip <code>rclone</code> on ARCHER2:
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://downloads.rclone.org/v1.62.2/rclone-v1.62.2-linux-amd64.zip
+unzip<span class="w"> </span>rclone-v1.62.2-linux-amd64.zip
+<span class="nb">cd</span><span class="w"> </span>rclone-v1.62.2-linux-amd64/
+</code></pre></div></p>
+<p>The previous code snippet uses rclone v1.62.2, which was the latest version when
+these instructions were written.</p>
+<p>Configure rclone using <code>./rclone config</code>. This will guide you through an
+interactive setup process where you can make a new remote (called <code>remote</code>).
+See the following for detailed instructions for:</p>
+<ul>
+<li><a href="https://rclone.org/onedrive/">Microsoft OneDrive.</a></li>
+<li><a href="https://rclone.org/dropbox/">Dropbox.</a></li>
+</ul>
+<p>Please note that a token is required to connect from ARCHER2 to the cloud service.
+You need a web browser to get the token. The recommendation is to run rclone
+in your laptop using <code>rclone authorize</code>, get the token, and then copy the token
+from your laptop to ARCHER2. The rclone website contains further instructions on
+<a href="https://rclone.org/remote_setup/">configuring rclone on a remote machine without web browser.</a></p>
+<p>Once all the above is done, you're ready to go. If you want to copy a directory,
+please use:</p>
+<p><code>rclone copy &lt;archer2_directory&gt; remote:&lt;cloud_directory&gt;</code></p>
+<p>Please note that "remote" is the name that you have chosen when running
+<code>rclone config</code>. To copy files, please use:</p>
+<p><code>rclone copyto &lt;archer2_file&gt; remote:&lt;cloud_file&gt;</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the session times out while the data transfer takes place, adding the
+<code>-vv</code> flag to an rclone transfer forces rclone to output to the terminal and
+therefore avoids triggering the timeout process.</p>
 </div>
 <h2 id="ssh-data-transfer-example-laptopworkstation-to-archer2">SSH data transfer example: laptop/workstation to ARCHER2</h2>
 <p>Here we have a short example demonstrating transfer of data directly
@@ -3310,13 +3372,13 @@ single archive file using the following command:</p>
 <code>rsync</code> to allow the transfer to be recommenced without needing to start
 again, in the event of a loss of connection or other failure. For example, using
 the SSH key in the file <code>~/.ssh/id_RSA_A2</code> on our local system:</p>
-<pre><code>rsync -Pv -e"ssh -c aes128-gcm@openssh.com -i $HOME/.ssh/id_RSA_A2" ./all_my_files.tar.gz otbz19@login.archer2.ac.uk:/work/z19/z19/otbz19/
+<pre><code>rsync -Pv -e"ssh -c aes128-ctr -i $HOME/.ssh/id_RSA_A2" ./all_my_files.tar.gz otbz19@login.archer2.ac.uk:/work/z19/z19/otbz19/
 </code></pre>
 <p>Note the use of the <code>-P</code> flag to allow partial transfer -- the same
 command could be used to restart the transfer after a loss of
 connection. The <code>-e</code> flag allows specification of the ssh command - we
 have used this to add the location of the identity file. 
-The <code>-c</code> option specifies the cipher to be used as <code>aes128-gcm</code> which has been found to increase performance
+The <code>-c</code> option specifies the cipher to be used as <code>aes128-ctr</code> which has been found to increase performance
 Unfortunately
 the <code>~</code> shortcut is not correctly expanded, so we have specified the
 full path. We move our research archive to our project work directory on
@@ -3327,7 +3389,7 @@ ARCHER2.</p>
 </div>
 <p>If we were unconcerned about being able to restart an interrupted
 transfer, we could instead use the <code>scp</code> command,</p>
-<pre><code>scp -c aes128-gcm@openssh.com -i ~/.ssh/id_RSA_A2 all_my_files.tar.gz otbz19@login.archer2.ac.uk:/work/z19/z19/otbz19/
+<pre><code>scp -c aes128-ctr -i ~/.ssh/id_RSA_A2 all_my_files.tar.gz otbz19@login.archer2.ac.uk:/work/z19/z19/otbz19/
 </code></pre>
 <p>but <code>rsync</code> is recommended for larger transfers.</p>
 
@@ -3406,10 +3468,10 @@ transfer, we could instead use the <code>scp</code> command,</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
       
     
   </body>
